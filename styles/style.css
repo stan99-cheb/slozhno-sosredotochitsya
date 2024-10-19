@@ -1,6 +1,333 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  padding: var(--global-padding);
+
   font-family: var(--main-font, sans-serif);
   font-weight: 400;
+
+  background-image: url(../images/cover-image-dark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  margin-bottom: 60px;
+  height: calc(100vh - var(--global-padding) * 2);
+
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-template-areas:
+    "menu"
+    "title"
+    "subtitle";
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  border-width: 1px 1px 0 0;
+  border-style: solid;
+  border-color: teal;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-width: 0 0 1px 1px;
+  border-style: solid;
+  border-color: teal;
+}
+
+.header__theme-menu {
+  justify-self: center;
+  grid-area: menu;
+}
+
+.header__title {
+  margin-left: calc(var(--global-padding) * -1);
+  align-self: center;
+  grid-area: title;
+}
+
+.header__subtitle {
+  height: fit-content;
+
+  justify-self: end;
+  grid-area: subtitle;
+  width: 50%;
+}
+
+.main {
+  margin-bottom: 60px;
+}
+
+.section {
+  margin-bottom: 80px;
+
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-auto-rows: auto;
+  grid-gap: 20px;
+}
+
+.card {
+  height: 200px;
+  border: 1px solid teal;
+}
+
+/* WHY */
+
+.why-title {
+  height: 50px;
+  border: 1px solid teal;
+
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.why-multitasking {
+  height: 200px;
+  border: 1px solid teal;
+
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 1;
+}
+
+.why-dopamine {
+  height: 200px;
+  border: 1px solid teal;
+
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 1;
+}
+
+/* WHAT */
+
+.what-title {
+  height: 50px;
+  border: 1px solid teal;
+
+  grid-column: 1 / span 1;
+  grid-row: 1;
+}
+
+.what-multitasking {
+  height: 200px;
+  border: 1px solid teal;
+
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.what-meal {
+  height: 200px;
+  border: 1px solid teal;
+
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.what-gadgets {
+  height: 200px;
+  border: 1px solid teal;
+
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+}
+
+/* HOW */
+
+.how-title {
+  height: 50px;
+  border: 1px solid teal;
+
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 6;
+}
+
+.how-title-advice {
+  height: 50px;
+  border: 1px solid teal;
+
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 1;
+}
+
+.how-imagine {
+  height: 200px;
+  border: 1px solid teal;
+
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 1;
+}
+
+.how-music {
+  height: 200px;
+  border: 1px solid teal;
+
+  grid-column: 2 / span 2;
+  grid-row: 3 / span 1;
+}
+
+.how-walk {
+  height: 200px;
+  border: 1px solid teal;
+
+  grid-column: 2 / span 2;
+  grid-row: 4 / span 1;
+}
+
+.how-meal {
+  height: 200px;
+  border: 1px solid teal;
+
+  grid-column: 2 / span 2;
+  grid-row: 5 / span 1;
+}
+
+.how-reading {
+  height: 200px;
+  border: 1px solid teal;
+
+  grid-column: 2 / span 2;
+  grid-row: 6 / span 1;
+}
+
+/* PICTURES */
+
+.pictures-title {
+  height: 50px;
+  border: 1px solid teal;
+
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+
+.picture {
+  border: 1px solid teal;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.picture-sunset {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+}
+
+.picture-ice-cream {
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 2;
+}
+
+.picture-tape {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 2;
+}
+
+.picture-books {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.picture-street {
+  grid-column: 2 / span 2;
+  grid-row: 4 / span 1;
+}
+
+/* FOOTER */
+
+.footer {
+  height: calc(100vh - var(--global-padding) * 2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  border-width: 1px 1px 0 0;
+  border-style: solid;
+  border-color: teal;
+}
+
+.footer::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-width: 0 0 1px 1px;
+  border-style: solid;
+  border-color: teal;
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .what-multitasking {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 1;
+  }
+
+  .what-meal {
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 1;
+  }
+
+  .what-gadgets {
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .page {
+    --global-padding: 10px;
+  }
+
+  .header__title {
+    margin-left: 0;
+  }
+
+  .header__subtitle {
+    width: 100%;
+  }
+
+  .section {
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .section-pictures-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
 }
