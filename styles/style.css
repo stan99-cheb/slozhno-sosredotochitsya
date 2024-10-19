@@ -15,6 +15,12 @@
   background-attachment: fixed;
 }
 
+.heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .header {
   margin-bottom: 60px;
   height: calc(100vh - var(--global-padding) * 2);
@@ -24,7 +30,6 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto 1fr;
-  gap: 0px 0px;
   grid-template-areas:
     "menu"
     "title"
@@ -333,6 +338,12 @@
   border-width: 0 0 1px 1px;
   border-style: solid;
   border-color: teal;
+}
+
+.footer-title {
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  line-height: clamp(5.9375rem, 4.6735rem + 5.3929vw, 8.125rem);
+  text-shadow: 2px 2px 0 teal;
 }
 
 @media (max-width: 768px) {
