@@ -133,38 +133,30 @@
   margin-bottom: 80px;
 
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
   grid-gap: 20px;
 }
 
 .card {
-  height: 200px;
-  border: 1px solid teal;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 
 /* WHY */
 
 .why-title {
-  height: 50px;
-  border: 1px solid teal;
-
   grid-column: 1 / span 1;
   grid-row: 1 / span 2;
 }
 
 .why-multitasking {
-  height: 200px;
-  border: 1px solid teal;
-
   grid-column: 2 / span 2;
   grid-row: 1 / span 1;
 }
 
 .why-dopamine {
-  height: 200px;
-  border: 1px solid teal;
-
   grid-column: 2 / span 2;
   grid-row: 2 / span 1;
 }
@@ -172,33 +164,21 @@
 /* WHAT */
 
 .what-title {
-  height: 50px;
-  border: 1px solid teal;
-
   grid-column: 1 / span 1;
   grid-row: 1;
 }
 
 .what-multitasking {
-  height: 200px;
-  border: 1px solid teal;
-
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
 }
 
 .what-meal {
-  height: 200px;
-  border: 1px solid teal;
-
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
 }
 
 .what-gadgets {
-  height: 200px;
-  border: 1px solid teal;
-
   grid-column: 3 / span 1;
   grid-row: 2 / span 1;
 }
@@ -206,57 +186,36 @@
 /* HOW */
 
 .how-title {
-  height: 50px;
-  border: 1px solid teal;
-
   grid-column: 1 / span 1;
   grid-row: 1 / span 6;
 }
 
 .how-title-advice {
-  height: 50px;
-  border: 1px solid teal;
-
   grid-column: 2 / span 2;
   grid-row: 1 / span 1;
 }
 
 .how-imagine {
-  height: 200px;
-  border: 1px solid teal;
-
   grid-column: 2 / span 2;
   grid-row: 2 / span 1;
 }
 
 .how-music {
-  height: 200px;
-  border: 1px solid teal;
-
   grid-column: 2 / span 2;
   grid-row: 3 / span 1;
 }
 
 .how-walk {
-  height: 200px;
-  border: 1px solid teal;
-
   grid-column: 2 / span 2;
   grid-row: 4 / span 1;
 }
 
 .how-meal {
-  height: 200px;
-  border: 1px solid teal;
-
   grid-column: 2 / span 2;
   grid-row: 5 / span 1;
 }
 
 .how-reading {
-  height: 200px;
-  border: 1px solid teal;
-
   grid-column: 2 / span 2;
   grid-row: 6 / span 1;
 }
@@ -264,16 +223,11 @@
 /* PICTURES */
 
 .pictures-title {
-  height: 50px;
-  border: 1px solid teal;
-
   grid-column: 1 / span 3;
   grid-row: 1;
 }
 
 .picture {
-  border: 1px solid teal;
-
   width: 100%;
   height: 100%;
   object-fit: cover;
