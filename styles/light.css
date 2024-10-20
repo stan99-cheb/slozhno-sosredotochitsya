@@ -9,4 +9,36 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --background-color: #fff1f7;
+  --page-background-image: url(../images/cover-image-light.png);
+  --default-color: #353430;
+  --accent-color: #ff8dcb;
+
+  --decor-color-text: var(--default-color);
+  --decor-color-background: var(--accent-color);
+
+  --header-title: #ffc2e6;
+  --header-title-shadow: #ff0070;
+
+  --title-color: var(--default-color);
+  --text-color: var(--default-color);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Дублируем переменные светлой темы */
+    --background-color: #fff1f7;
+    --page-background-image: url(../images/cover-image-light.png);
+    --default-color: #353430;
+    --accent-color: #ff8dcb;
+
+    --decor-color-text: var(--default-color);
+    --decor-color-background: var(--accent-color);
+
+    --header-title: #ffc2e6;
+    --header-title-shadow: #ff0070;
+
+    --title-color: var(--default-color);
+    --text-color: var(--default-color);
+  }
 }

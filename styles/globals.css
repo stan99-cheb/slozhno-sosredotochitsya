@@ -39,4 +39,29 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+a:focus,
+button:focus {
+  outline: none;
+}
+
+a:focus-visible {
+  outline: 1px solid var(--default-color);
+}
+
+button:focus-visible {
+  border-bottom: 1px solid var(--default-color);
+}
+
+button:hover {
+  outline: 1px solid color-mix(in srgb, var(--default-color) 40%, transparent);
 }
