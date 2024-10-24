@@ -107,7 +107,7 @@
   pointer-events: none;
 }
 
-.page.theme_dark .decor-rec::before {
+.decor-rec::before {
   content: 'REC';
 
   font-size: 18px;
@@ -120,7 +120,7 @@
   color: var(--default-color);
 }
 
-.page.theme_dark .decor-rec::after {
+.decor-rec::after {
   content: '';
 
   position: absolute;
