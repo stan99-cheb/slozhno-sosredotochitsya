@@ -1,10 +1,13 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
-
 :root {
   --main-font: 'IBM Plex mono';
+  --main-font-size: 1.125rem;
+  --main-line-height: 1.5rem;
 
-  --global-padding: 20px;
+  --title-font-size: 1.125rem;
+  --title-line-height: 1.5rem;
+
+  --header-title-font-size: 9.813rem;
+  --header-title-line-height: 8.125rem;
+
+  --global-padding: 1.25rem;
 }

@@ -1,14 +1,4 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
   --background-color: #fff1f7;
   --page-background-image: url(../images/cover-image-light.png);
   --default-color: #353430;
@@ -30,7 +20,6 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    /* Дублируем переменные светлой темы */
     --background-color: #fff1f7;
     --page-background-image: url(../images/cover-image-light.png);
     --default-color: #353430;
