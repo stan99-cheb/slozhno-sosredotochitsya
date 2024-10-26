@@ -34,7 +34,7 @@
 
 .header {
   margin-block-end: 80px;
-  block-size: calc(100vh - var(--global-padding) * 2);
+  block-size: calc(100dvh - var(--global-padding) * 2);
   min-block-size: calc(668px - var(--global-padding) * 2);
 
   position: relative;
@@ -249,7 +249,7 @@
 /* FOOTER */
 
 .footer {
-  block-size: calc(100vh - var(--global-padding) * 2);
+  block-size: calc(100dvh - var(--global-padding) * 2);
   min-block-size: calc(668px - var(--global-padding) * 2);
 
   display: flex;
